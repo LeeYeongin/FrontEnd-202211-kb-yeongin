@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        input{
+            width: 50px;
+        }
+    </style> -->
+</head>
+<body>
+    <form action="">
+        <input type="text" maxlength="20" name="name" value="이영인" readonly><br>
+        <input type="text" maxlength="20" name="name2" value="이영인" disabled><br>
+        <input type="search"><br>
+        <input type="url"><br>
+        <button>전송</button>
+    </form>
+    
+    <form action="">
+        <input type="email" required autofocus><br>
+        <input type="tel" required placeholder="연락처를 입력하세요."><br> <!-- 모바일에서 키보드자판이 전화번호 자판형식으로 변경 -->
+        <button>전송</button>  <!-- 버튼은 일반적으로 submit type -->
+        <input type="submit">
+        <input type="reset" value="다지워라">  <!-- value값으로 버튼속 글씨변경가능 -->
+    </form>
+
+    <form action="">
+        <div>
+            <input type="radio" id="a1" name="radioData" value="이거1번" checked><label for="a1">a1</label>
+            <input type="radio" id="a2" name="radioData" value="이거2번"><label for="a2">a2</label>
+            <input type="radio" id="a3" name="radioData2" value="이거3번"><label for="a3">a3</label>
+            <input type="radio" id="a4" name="radioData2" value="이거4번"><label for="a4">a4</label>
+            <!-- name이 같은것끼리 묶임 -> name이 같은것끼리 다중선택X , check하면 value안의 값이 전송 (name=key값, value=value값)-->
+        </div>
+        <div>
+            <input type="checkbox" name="hobby" id="h1" value="축구" checked><label for="h1">축구</label>
+            <input type="checkbox" name="hobby" id="h2" value="야구"><label for="h2">야구</label>
+            <input type="checkbox" name="hobby" id="h3" value="족구"><label for="h3">족구</label>
+            <input type="checkbox" name="hobby" id="h4" value="농구"><label for="h4">농구</label>
+            <!-- checkbox는 다중선택 가능 -->
+        </div>
+        <button>전송</button>
+    </form>
+
+    <form action="">
+        <input type="number" name="stock" id="stock-id" min="0" max="10" step="2"><label for="stock-id">수량(<span class="stock-num"></span>)</label><br>
+        <input type="range" name="stock2" id="stock-id2" min="0" max="10"><label for="stock-id2">수량2(<span class="stock-num"></span>)</label> <!-- 기본: 0부터 100까지-->
+        <button>전송</button>
+    </form>
+
+    <form action="">
+        <input type="file" multiple accept=".jpg, .png, .gif">
+        <!-- multiple을 사용하면 여러개의 file input가능 | accept를 사용하면 file의 확장자제한 가능 -->
+    </form>
+
+    <form action="">
+        <label for="memo-id">메모</label><br>
+        <textarea name="memo" id="memo-id" cols="30" rows="10" placeholder="메모를 입력하세요."></textarea> <!-- textarea의 크기조절 사이트에서 가능 -> 가능한 못하게해야함 -->
+    </form>
+
+    <form action="">
+        <select name="programming" multiple>
+            <option value="java">java</option>
+            <option value="c">c</option>
+            <option value="python">python</option>
+        </select>
+        <input type="text" list="input-list">
+        <datalist id="input-list">
+            <option value="java1">java1</option>
+            <option value="java2">java2</option>
+            <option value="c">c</option>
+            <option value="python">python</option>
+        </datalist>
+        <!-- input에 입력하는 값을 포함하는 항목들만 list에서 볼 수 있음 -->
+    </form>
+
+    <script>
+        const stock1 = document.querySelector("#stock-id");
+        const stock2 = document.querySelector("#stock-id2");
+
+        stock1.onchange = () => { // 변화가 일어나면 아래 코드를 실행해라
+            document.querySelectorAll(".stock-num")[0].textContent = stock1.value;
+        }
+        stock2.onchange = () => {
+            document.querySelectorAll(".stock-num")[1].textContent = stock2.value;
+        }
+    </script>
+</body>
+</html>
