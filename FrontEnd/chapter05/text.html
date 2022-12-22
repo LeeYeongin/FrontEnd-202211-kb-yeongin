@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap'); google 웹폰트 사용 */
+        
+        @font-face {    /* 눈누 사이트 웹폰트 사용 */
+            font-family: 'KIMM_Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'KIMM_Bold';
+        }
+
+        .text1 {
+            font-size: 30px;
+            font-weight: 700; /* 400정도가 기본 */
+            /* color: rgb(red, green, blue); */
+            color: rgba(0, 0, 0, 0.1);  /* 투명도까지 조절가능 투명도 값 -> 0~1 */
+            color: #0606e4;  /* red 2자리, green 2자리, blue 2자리 | 1자리씩도 사용가능 but, 밝기조절 불가 ex) #fff
+                                    뒤에 2자리를 추가하면 투명도도 조절가능 00~ff (0에서 255까지 256가지)*/
+        }
+
+        .text2 {
+            font-size: 16px;
+            font-style: italic;
+            line-height: 10px;
+        }
+
+        .naver-link {
+            font-size: 30px;
+            color: rgb(25, 206, 96);
+            text-decoration: none;
+        }
+
+        .spacing {
+            /* letter-spacing: 10px; 글자 사이간격*/
+            word-spacing: 100px; /* 단어 사이간격 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text1">1. 웹 개발 시작하기</div>
+    <span class="text2">1-1. 웹 개발 알아보기</span><br>
+    <span class="text2">1-2. 웹 개발, 어디서부터 시작할까</span><br>
+    <a href="http://www.naver.com" class="naver-link">네이버</a>
+
+    <div class="spacing">코리아 아이티 아카데미</div>
+</body>
+
+</html>
