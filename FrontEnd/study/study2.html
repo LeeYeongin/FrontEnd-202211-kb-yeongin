@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8eb5905426.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: medium;
+        }
+
+        .nav {
+            background-color: #383d40;
+            height: 50px;
+        }
+
+        .site-name {
+            position: relative;
+            display: inline-block;
+            margin: 0px 0px 0px 15%;
+
+            line-height: 35px;
+            color: white;
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .small-name {
+            font-size: small;
+            color: #aaa;
+        }
+
+        .dropdown {
+            position: relative;
+            margin: 0px 18% 0px 0px;
+            float: right;
+
+            font-size: 22px;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            border: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            background-color: #383d40;
+            height: 50px;
+            width: 130px;
+        }
+
+        .profile-img-box {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 50%;
+
+            width: 30px;
+            height: 30px;
+
+            overflow: hidden;
+        }
+
+        .profile-img{
+            width: 100%;
+        }
+
+        .name {
+            margin: 0px 0px 0px 10px;
+            display: inline-block;
+            color: white;
+        }
+
+        .dropdown-content {
+            position: absolute;
+            display: none;
+        }
+
+        .dropdown-content a {
+            position: relative;
+            z-index: 1;
+            display: block;
+            background-color: white;
+            margin: 0px;
+
+            border-left: 0.5px solid rgba(228, 226, 226, 0.808);
+            border-right: 0.5px solid rgba(228, 226, 226, 0.808);
+            padding: 10px;
+            text-align: center;
+            font-size: small;
+            width: 130px;
+        }
+
+        .dropdown-content .logout {
+            border-top:  0.5px solid rgba(228, 226, 226, 0.808);
+            border-bottom:  0.5px solid rgba(228, 226, 226, 0.808);
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(227, 227, 227);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .top-container {
+            margin: 10px 18% 0px 15%;
+            display: flex;
+            align-items: center;
+
+            border-bottom: 0.5px solid  rgba(228, 226, 226, 0.808);
+
+        }
+
+        .top-title {
+            display: inline-block;
+            /* margin: 35px 0px 15px 0px; */
+
+            font-weight: 500;
+            font-size: 35px;
+        }
+
+        .finder {
+            display: inline-block;
+            margin: 0px 0px 0px 45%;
+            position: relative;
+        }
+
+        .find-input {
+            border: 0.5px solid  rgba(196, 195, 195, 0.808) ;
+            border-radius: 5%;
+            width: 230px;
+            height: 28px;
+        }
+
+        .fa-search {
+            position: absolute;
+            top: 8px;
+            right: 5px;
+            margin: 0px;
+        }
+
+        .button1{
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+        }
+
+        .button2{
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <header class="nav">
+        <div class="site-name">
+            Oven
+            <sup class="small-name">BETA</sup>
+        </div>
+        <div class="dropdown">
+            <button class="dropdown-btn">
+                <div class="profile-img-box">
+                    <img class="profile-img" src="/images/github.png">
+                </div>
+                <div class="name">LeeYeongin</div>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">프로젝트 대쉬보드</a>
+                <a href="#">계정 설정하기</a>
+                <a href="#">헬프데스크</a>
+                <a class="logout" href="#">로그아웃</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="top-container">
+        <h1 class="top-title">프로젝트 대쉬보드</h1>
+        <div class="finder">
+            <i class="fas fa-search"></i>
+            <input class="find-input" type="text" placeholder="프로젝트 검색">
+        </div>
+
+    </div>
+</body>
+
+</html>
