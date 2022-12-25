@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8eb5905426.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/091e6f0706.js" crossorigin="anonymous"></script>
     <title>Document</title>
 
     <style>
@@ -57,7 +58,7 @@
             cursor: pointer;
             background-color: #383d40;
             height: 50px;
-            width: 130px;
+            width: 140px;
         }
 
         .profile-img-box {
@@ -73,7 +74,7 @@
             overflow: hidden;
         }
 
-        .profile-img{
+        .profile-img {
             width: 100%;
         }
 
@@ -82,6 +83,7 @@
             display: inline-block;
             color: white;
         }
+
 
         .dropdown-content {
             position: absolute;
@@ -104,8 +106,8 @@
         }
 
         .dropdown-content .logout {
-            border-top:  0.5px solid rgba(228, 226, 226, 0.808);
-            border-bottom:  0.5px solid rgba(228, 226, 226, 0.808);
+            border-top: 0.5px solid rgba(228, 226, 226, 0.808);
+            border-bottom: 0.5px solid rgba(228, 226, 226, 0.808);
         }
 
         .dropdown-content a:hover {
@@ -121,7 +123,7 @@
             display: flex;
             align-items: center;
 
-            border-bottom: 0.5px solid  rgba(228, 226, 226, 0.808);
+            border-bottom: 0.5px solid rgba(228, 226, 226, 0.808);
 
         }
 
@@ -140,7 +142,7 @@
         }
 
         .find-input {
-            border: 0.5px solid  rgba(196, 195, 195, 0.808) ;
+            border: 0.5px solid rgba(196, 195, 195, 0.808);
             border-radius: 5%;
             width: 230px;
             height: 28px;
@@ -153,18 +155,24 @@
             margin: 0px;
         }
 
-        .button1{
+        .button1 {
+            margin: 0px 0px 0px 15px;
             display: inline-block;
+
+            background-color: white;
+            border: 0.5px solid rgba(196, 195, 195, 0.808);
             width: 28px;
             height: 28px;
         }
 
-        .button2{
+        .button2 {
             display: inline-block;
+
+            background-color: white;
+            border: 0.5px solid rgba(196, 195, 195, 0.808);
             width: 28px;
             height: 28px;
         }
-
     </style>
 
 
@@ -181,7 +189,9 @@
                 <div class="profile-img-box">
                     <img class="profile-img" src="/images/github.png">
                 </div>
-                <div class="name">LeeYeongin</div>
+                <div class="name">LeeYeongin
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
             </button>
             <div class="dropdown-content">
                 <a href="#">프로젝트 대쉬보드</a>
@@ -198,6 +208,14 @@
             <i class="fas fa-search"></i>
             <input class="find-input" type="text" placeholder="프로젝트 검색">
         </div>
+
+        <button class="button1">
+            <i class="fa-sharp fa-solid fa-list"></i>
+        </button>
+
+        <button class="button2">
+            <i class="fa-solid fa-table-cells-large"></i>
+        </button>
 
     </div>
 </body>
