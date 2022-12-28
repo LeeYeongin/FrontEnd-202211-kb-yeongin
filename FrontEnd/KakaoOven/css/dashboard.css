@@ -359,3 +359,51 @@ header {
 
     cursor: pointer;
 }
+
+footer {
+    margin: 20px 91px 0px;
+    padding: 20px 15px 0px;
+
+    height: 81px;
+
+    border-top: 1px solid #ddd;;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 61px;
+    width: 100%;
+
+    font-size: 14px;
+}
+
+.footer-pull-left {
+    color: #333;
+}
+
+.service-agreement {
+    color: #3498db;
+}
+
+.service-agreement:hover {
+    color: #3d82b1;
+    text-decoration: underline;
+}
+
+.personal-information {
+    color: #3498db;
+    font-weight: 600;
+}
+
+.personal-information:hover {
+    color: #256a98;
+    text-decoration: underline;
+}
+
+.footer-pull-right {
+    color: #000;
+}
+
