@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 3</title>
+    <script src="js/common.js"></script>
+    <script>
+        // Function 1
+        function func1() {
+            alert('func1 - 안녕하세요.');
+        }
+        // func1(); 
+        // Function 2
+        // let, const
+        const func2 = () => {
+            alert('func2 - 안녕하세요.');
+        }
+        // func2(); // 함수를 변수로 저장했기때문에 ()없이도 실행가능
+
+    // </script>
+</head>
+<body>
+    <button id="btn1">Btn 1</button>
+    <!-- <input style="width: 100px;" onfocus="alert('Focusing');"/> -->
+    <input style="width: 100px;"/>
+
+    <button onclick="helloworld();"> Hello World! </button>
+
+    <button onclick="moveExample02();"> Move 02</button>
+    <a href="./example02.html">move02</a>
+    <script> // id값을 읽은 후 실행되야함 -> body에 script작성
+        // [방법 1: 웹 요소를 변수로 지정 & 미리 만든 함수 사용]
+        // const onClickHandler = document.querySelector('#btn1');
+        // onClickHandler.onclick = func1;
+
+        // [방법 2: 웹 요소를 따로 변수로 만들지 않고 사용]
+        document.querySelector('#btn1').onclick = func2;1
+    </script>
+</body>
+</html>
