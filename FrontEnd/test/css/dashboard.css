@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+}
+
+/* Side navigation */
+.side-nav-bar {
+    height: 100vh;
+    /* vh = view heihgt, vw = view width*/
+    top: 0px;
+    left: 0px;
+    padding: 10px;
+
+    background-color: #c4c4c4;
+}
+
+.side-nav-item {
+    height: 40px;
+    padding-bottom: 30px;
+
+    display: block;
+}
+
+.side-nav-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-cover {
+    width: 100%;
+    height: 300px;
+
+    object-fit: cover;
+}
+
+.main-nav-bar {
+    padding-top: 11px;
+    padding-bottom: 15px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-nav-item {
+    font-size: 24px;
+    color: #000000;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.divider {
+    border: 1px solid #999494;
+}
+
+.form-container {
+    height: 580px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.form-content {
+    text-align: center;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 32px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.row-label {
+    padding-right: 20px;
+
+    text-align: right;
+    vertical-align: top;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.form-input {
+    margin-bottom: 5px;
+    width: 100%;
+    height: 35px;
+
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+
+.commercial-at {
+    padding:0px 5px 15px 10px;
+
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+
+    line-height: 42px;
+}
+
+.form-select {
+    width: 260px;
+    height: 39px;
+
+    margin-top: -15px;
+
+    border-radius: 10px;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+
+
+}
+
+.form-textarea {
+    width: 100%;
+    height: 200px;
+
+    border-radius: 10px;
+}
+
+.form-button-container {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 15px auto;
+}
+
+.form-btn {
+    width: 150px;
+    height: 60px;
+
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+
+    background-color: #1a8fdd;
+
+    border: 0;
+    border-radius: 10px;
+}
